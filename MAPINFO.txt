@@ -1,0 +1,4 @@
+GameInfo
+{
+    AddEventHandlers = "pr_AcsToolHandler"
+}
