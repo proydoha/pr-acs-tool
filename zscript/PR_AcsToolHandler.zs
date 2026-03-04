@@ -32,6 +32,7 @@ class PR_AcsToolHandler: EventHandler
         Array<String> eventAndArguments;
         e.Name.split(eventAndArguments, ":", TOK_KEEPEMPTY);
 
+        if (eventName.Size() <= 0) { return; }
         string eventName = eventAndArguments[0];
         if (eventName != "pr_AcsToolCommand") { return; }
 
